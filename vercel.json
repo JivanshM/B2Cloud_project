@@ -1,0 +1,19 @@
+{
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/"
+      }
+    ]
+  }
+  ```[_{{{CITATION{{{_2{How to Fix Vercel 404 error: Child URL Path Issues](https://dev.to/david_bilsonn/how-to-fix-vercel-404-error-child-url-path-issues-n0o)
+  
+  This configuration tells Vercel to redirect all child paths to the root path, ensuring that your React app handles the routing instead of Vercel trying to find static files for each route[_{{{CITATION{{{_1{Fixing Vercel 404 Errors: A Simple Solution for Node.js Projects](https://dev.to/elliot_brenya/fixing-vercel-404-errors-a-simple-solution-for-nodejs-projects-1jbf).
+  
+  3. **Push the changes** to your repository.
+  4. **Redeploy your application** on Vercel[_{{{CITATION{{{_1{Fixing Vercel 404 Errors: A Simple Solution for Node.js Projects](https://dev.to/elliot_brenya/fixing-vercel-404-errors-a-simple-solution-for-nodejs-projects-1jbf).
+  
+  By adding this rewrite rule, your routes should work correctly on both desktop and mobile devices[_{{{CITATION{{{_2{How to Fix Vercel 404 error: Child URL Path Issues](https://dev.to/david_bilsonn/how-to-fix-vercel-404-error-child-url-path-issues-n0o).
+  
+  Give this a try and let me know if it resolves the issue!
+  

@@ -1,0 +1,91 @@
+.process-section {
+  text-align: center;
+  background-color: #f9f9f9;
+  height: 100vh; /* Set height to 100vh */
+  padding: 5vh 0;
+}
+
+.process-title {
+  font-size: 2rem;
+  color: #00a8cc;
+  text-transform: uppercase;
+}
+
+.process-subtitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 5vh; /* Add more space between heading and cards */
+  margin-top: 2vh;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  position: relative;
+  margin-top: 10vh; /* Add space between heading and cards */
+}
+
+.step {
+  flex: 1 1 calc(25% - 1rem); /* Adjust for desktop grid */
+  max-width: 250px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 2rem 1rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2), 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  padding: 1rem;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem; /* Add margin to accommodate the icon */
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .process-section {
+    padding-bottom: 10vh;
+    height: auto; /* Adjust height for content on mobile */
+  }
+  .process-steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .step {
+    flex: 1 1 100%; /* Full width */
+    max-width: 90%; /* Adjust to fit mobile screens */
+    margin-bottom: 3rem; /* Add space between cards on mobile */
+  }
+}
