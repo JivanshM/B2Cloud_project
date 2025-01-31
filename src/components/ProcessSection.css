@@ -3,12 +3,14 @@
   background-color: #f9f9f9;
   height: 100vh; /* Set height to 100vh */
   padding: 5vh 0;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
 }
 
 .process-title {
   font-size: 2rem;
   color: #00a8cc;
   text-transform: uppercase;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
 }
 
 .process-subtitle {
@@ -16,6 +18,7 @@
   font-weight: bold;
   margin-bottom: 5vh; /* Add more space between heading and cards */
   margin-top: 2vh;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
 }
 
 .process-steps {
@@ -39,6 +42,7 @@
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
 }
 
 .step:hover {
@@ -64,11 +68,13 @@ h4 {
   font-size: 1.5rem;
   margin-top: 2.5rem; /* Add margin to accommodate the icon */
   margin-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
 }
 
 p {
   font-size: 1rem;
   color: #555;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
 }
 
 /* Mobile View */

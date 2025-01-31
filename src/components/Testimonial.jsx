@@ -9,6 +9,7 @@ function Testimonial() {
       alignItems: "center",
       height: "100vh",
       backgroundColor: "#f9f9f9",
+      fontFamily: "'Roboto', sans-serif",  // Applying custom font
     },
     card: {
       backgroundColor: "#ffffff",
@@ -19,6 +20,7 @@ function Testimonial() {
       height: "40%",   
       textAlign: "center",
       position: "relative",
+      fontFamily: "'Open Sans', sans-serif", // Apply font here if different from container
     },
     quote: {
       fontSize: "1.2rem",
@@ -26,6 +28,7 @@ function Testimonial() {
       color: "#333",
       marginBottom: "1.5rem",
       fontStyle: "italic",
+      fontFamily: "'Lora', serif", // Change font for quote
     },
     authorInfo: {
       display: "flex",
@@ -42,11 +45,13 @@ function Testimonial() {
       fontWeight: "bold",
       fontSize: "1rem",
       margin: "0",
+      fontFamily: "'Roboto', sans-serif", // Applying font here too
     },
     authorTitle: {
       fontSize: "0.85rem",
       color: "#777",
       margin: "0",
+      fontFamily: "'Roboto', sans-serif",
     },
     navigation: {
       display: "flex",

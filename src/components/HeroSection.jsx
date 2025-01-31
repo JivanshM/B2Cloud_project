@@ -18,21 +18,26 @@ const HeroSection = () => {
         padding: "0 20px",
         overflowX: "hidden",
         overflowY: "auto",
+        fontFamily: "'Poppins', sans-serif", // Set font family
       }}
       className="hero-container"
     >
       {/* CSS Reset */}
       <style>
         {`
+          * {
+            font-family: 'Poppins', sans-serif;
+          }
+
           .hero-content {
             max-width: 100%;
             overflow-x: hidden;
           }
 
           @media (max-width: 768px) {
-            .hero-left{
+            .hero-left {
               margin-top: 0vh !important;
-              text-align: center !important; // Center text on mobile
+              text-align: center !important;
             }
 
             .hero-content {
@@ -42,14 +47,14 @@ const HeroSection = () => {
               transform: translateY(-63px) scale(0.65);
             }
             .trusted-brands {
-              text-align: center !important; // Center text on mobile
+              text-align: center !important;
             }
             .brands-list {
-              justify-content: center !important; // Center on mobile
+              justify-content: center !important;
             }
             .brands-list img {
               width: 80px;
-              margin-left: 0 !important; // Reset left margin on mobile
+              margin-left: 0 !important;
             }
           }
         `}
@@ -65,7 +70,7 @@ const HeroSection = () => {
           width: "100%",
           margin: "0 auto",
           flex: 1,
-          paddingBottom: "5vh", // Add padding to ensure space for trusted brands
+          paddingBottom: "5vh",
         }}
         className="hero-content"
       >
@@ -143,7 +148,7 @@ const HeroSection = () => {
               padding: "10px",
               transition: "transform 0.3s ease-in-out",
               marginTop: "15vh",
-              marginBottom: "1vh", // Add bottom margin
+              marginBottom: "1vh",
             }}
             className="hero-right"
           >
@@ -192,8 +197,8 @@ const HeroSection = () => {
         {/* Trusted Brands Section */}
         <div
           style={{
-            marginTop: "auto", // Push to the bottom of the flex container
-            textAlign: "left", // Align text to the left
+            marginTop: "auto",
+            textAlign: "left",
             color: "white",
             width: "100%",
             position: "relative",
@@ -201,17 +206,17 @@ const HeroSection = () => {
           }}
           className="trusted-brands"
         >
-          <p style={{color: "white"}}>Trusted by Leading Brands</p>
+          <p style={{ color: "white" }}>Trusted by Leading Brands</p>
           <div
             style={{
               display: "flex",
-              justifyContent: "flex-start", // Align to the left
+              justifyContent: "flex-start",
               alignItems: "center",
               gap: "20px",
               flexWrap: "wrap",
               maxWidth: "1000px",
               margin: "0 auto",
-              paddingBottom: "20px", // Add padding to ensure space
+              paddingBottom: "20px",
             }}
             className="brands-list"
           >

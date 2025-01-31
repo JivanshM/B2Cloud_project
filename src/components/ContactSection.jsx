@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import 'typeface-poppins';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 const ContactSection = () => {
@@ -84,7 +85,7 @@ export default ContactSection;
 const Section = styled.section`
   padding: 20px 40px;
   background-color: #f9f9f9;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
 
   @media (max-width: 768px) {
     padding: 20px 20px;
@@ -104,12 +105,12 @@ const LeftSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 20px; /* Added margin-left for larger screens */
+  margin-left: 20px;
 
   @media (max-width: 768px) {
     max-width: 100%;
     margin-bottom: 20px;
-    margin-left: 0; /* Remove margin-left for smaller screens */
+    margin-left: 0;
   }
 `;
 
@@ -279,4 +280,3 @@ const MapBox = styled.div`
     width: 100%;
   }
 `;
-

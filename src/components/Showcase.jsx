@@ -43,7 +43,7 @@ const Showcase = () => {
   const styles = {
     container: {
       padding: "2rem",
-      fontFamily: "'Arial', sans-serif",
+      fontFamily: "'Poppins', sans-serif", // Use Poppins font for the whole section
       textAlign: "center",
     },
     title: {

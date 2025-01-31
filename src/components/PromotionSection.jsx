@@ -1,57 +1,64 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import { FaCheck } from 'react-icons/fa';
+
+const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+`;
 
 const PromotionSection = () => {
   return (
-    <Section>
-      <Container>
-        <TextContainer>
-          <Title>Our Mission</Title>
-          <Subtitle>Boost your with your business</Subtitle>
-          <Paragraph>
-            He moonlights difficult engrossed it, sportsmen. Interested has all Devonshire
-            difficulty gay assistance joy.
-          </Paragraph>
-          <List>
-            <ListItem>
-              <FaCheck /> Meaningful messageers an of unwilling
-            </ListItem>
-            <ListItem>
-              <FaCheck /> Seem as fully taken by clumsy
-            </ListItem>
-            <ListItem>
-              <FaCheck /> On since course gree living
-            </ListItem>
-            <ListItem>
-              <FaCheck /> Recalled and centrally day
-            </ListItem>
-            <ListItem>
-              <FaCheck /> Site law course gree living
-            </ListItem>
-            <ListItem>
-              <FaCheck /> Preference for unreserved
-            </ListItem>
-          </List>
-        </TextContainer>
-        <ImageContainer>
-          <ImageWrapper>
-            <Image src="https://images.unsplash.com/photo-1488751045188-3c55bbf9a3fa?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG9mZmljZSUyMHBvcnRyYWl0fGVufDB8fDB8fHww" alt="Team interaction" />
-            <StatItem>
-              <StatTitle>10k</StatTitle>
-              <StatDescription>Boost conversations per month</StatDescription>
-            </StatItem>
-          </ImageWrapper>
-          <ImageWrapper>
-            <Image src="https://images.unsplash.com/photo-1488751045188-3c55bbf9a3fa?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG9mZmljZSUyMHBvcnRyYWl0fGVufDB8fDB8fHww" alt="Business setting" />
-            <StatItem>
-              <StatTitle>95+</StatTitle>
-              <StatDescription>Projects Complete</StatDescription>
-            </StatItem>
-          </ImageWrapper>
-        </ImageContainer>
-      </Container>
-    </Section>
+    <>
+      <GlobalStyle />
+      <Section>
+        <Container>
+          <TextContainer>
+            <Title>Our Mission</Title>
+            <Subtitle>Boost your with your business</Subtitle>
+            <Paragraph style={{color: 'white'}}>
+              He moonlights difficult engrossed it, sportsmen. Interested has all Devonshire
+              difficulty gay assistance joy.
+            </Paragraph>
+            <List>
+              <ListItem>
+                <FaCheck /> Meaningful messageers an of unwilling
+              </ListItem>
+              <ListItem>
+                <FaCheck /> Seem as fully taken by clumsy
+              </ListItem>
+              <ListItem>
+                <FaCheck /> On since course gree living
+              </ListItem>
+              <ListItem>
+                <FaCheck /> Recalled and centrally day
+              </ListItem>
+              <ListItem>
+                <FaCheck /> Site law course gree living
+              </ListItem>
+              <ListItem>
+                <FaCheck /> Preference for unreserved
+              </ListItem>
+            </List>
+          </TextContainer>
+          <ImageContainer>
+            <ImageWrapper>
+              <Image src="https://images.unsplash.com/photo-1488751045188-3c55bbf9a3fa?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG9mZmljZSUyMHBvcnRyYWl0fGVufDB8fDB8fHww" alt="Team interaction" />
+              <StatItem>
+                <StatTitle>10k</StatTitle>
+                <StatDescription style={{color: "white"}}>Boost conversations per month</StatDescription>
+              </StatItem>
+            </ImageWrapper>
+            <ImageWrapper>
+              <Image src="https://images.unsplash.com/photo-1488751045188-3c55bbf9a3fa?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG9mZmljZSUyMHBvcnRyYWl0fGVufDB8fDB8fHww" alt="Business setting" />
+              <StatItem>
+                <StatTitle>95+</StatTitle>
+                <StatDescription style={{color: "white"}}>Projects Complete</StatDescription>
+              </StatItem>
+            </ImageWrapper>
+          </ImageContainer>
+        </Container>
+      </Section>
+    </>
   );
 };
 
@@ -62,6 +69,7 @@ const Section = styled.section`
   background-color: black;
   color: white;
   height: 100vh;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
 
   @media(max-width: 768px) {
     height: auto; /* Auto height for mobile view */
@@ -108,16 +116,19 @@ const ImageContainer = styled.div`
 const Title = styled.h1`
   font-size: 36px;
   margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
 `;
 
 const Subtitle = styled.h2`
   font-size: 28px;
   margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
 `;
 
 const Paragraph = styled.p`
   font-size: 16px;
   margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
 `;
 
 const List = styled.ul`
@@ -130,6 +141,7 @@ const ListItem = styled.li`
   align-items: center;
   font-size: 16px;
   margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
 `;
 
 const ImageWrapper = styled.div`
@@ -157,8 +169,10 @@ const StatItem = styled.div`
 
 const StatTitle = styled.h3`
   font-size: 24px;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
 `;
 
 const StatDescription = styled.p`
   font-size: 16px;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
 `;

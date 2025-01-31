@@ -12,6 +12,7 @@
     height: 100vh;
     position: relative;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Add Poppins font */
 }
 
 .about-us-section .left-section {
@@ -70,6 +71,7 @@
     font-size: 1.25rem;
     text-transform: uppercase;
     margin-bottom: 0;
+    font-family: 'Poppins', sans-serif; /* Add Poppins font */
 }
 
 .about-us-section .right-section h2 {
@@ -77,6 +79,7 @@
     font-weight: bold;
     line-height: 1.3;
     margin-bottom: 0;
+    font-family: 'Poppins', sans-serif; /* Add Poppins font */
 }
 
 .about-us-section .right-section p {
@@ -84,6 +87,7 @@
     color: #f5f2f2;
     line-height: 1.8;
     margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif; /* Add Poppins font */
 }
 
 .about-us-section .right-section a {
@@ -97,6 +101,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(68, 185, 164, 0.3);
     transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif; /* Add Poppins font */
 }
 
 .about-us-section .right-section a:hover {

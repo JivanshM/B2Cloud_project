@@ -31,7 +31,7 @@ const TeamSection = () => {
         </TeamContainer>
         <BlackBox>
           <BoxContent>
-            <Message>Join our team and make an impact!</Message>
+            <Message style={{color: "white"}}>Join our team and make an impact!</Message>
             <Button>Get in Touch</Button>
           </BoxContent>
         </BlackBox>
@@ -45,13 +45,17 @@ export default TeamSection;
 const Section = styled.section`
   background-color: white;
   color: black;
-  height: 100vh;
+  min-height: 100vh; /* Ensures the section takes full height of the viewport */
   padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @media (max-width: 768px) {
-    height: auto; /* Auto height for mobile view */
+    min-height: auto; /* Auto height for mobile view */
   }
 `;
+
 
 const Container = styled.div`
   max-width: 1200px;
@@ -85,9 +89,9 @@ const Card = styled.div`
   background-color: white;
   color: black;
   border-radius: 10px;
-  margin: 10px;
+  margin: 40px;
   padding: 15px;  /* Reduced padding */
-  width: 200px;  /* Decreased width */
+  width: 300px;  /* Decreased width */
   text-align: center;
   position: relative;
   overflow: hidden;

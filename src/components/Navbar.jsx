@@ -20,7 +20,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav>
+    <nav style={{ fontFamily: "Poppins, sans-serif" }}>
       {/* Logo */}
       <div style={{ height: "100%", display: "flex", alignItems: "center" }}>
         <img
@@ -37,13 +37,13 @@ const Navbar = () => {
       {/* Desktop Links */}
       {!isMobile && (
         <div className="desktop-links">
-          <a href="/" style={{ color: "white", textDecoration: "none" }}>
+          <a href="/" style={{ color: "white", textDecoration: "none", fontFamily: "Poppins, sans-serif" }}>
             Home
           </a>
-          <a href="/aboutus" style={{ color: "white", textDecoration: "none" }}>
+          <a href="/aboutus" style={{ color: "white", textDecoration: "none", fontFamily: "Poppins, sans-serif" }}>
             About
           </a>
-          <a href="/portfolio" style={{ color: "white", textDecoration: "none" }}>
+          <a href="/portfolio" style={{ color: "white", textDecoration: "none", fontFamily: "Poppins, sans-serif" }}>
             Portfolio
           </a>
         </div>
@@ -51,26 +51,29 @@ const Navbar = () => {
 
       {/* Desktop "Get in touch" Button */}
       {!isMobile && (
-        <a href="/contactus"><button className="get-in-touch" >Get in touch</button></a>
+        <a href="/contactus">
+          <button className="get-in-touch" style={{ fontFamily: "Poppins, sans-serif" }}>
+            Get in touch
+          </button>
+        </a>
       )}
 
       {/* Mobile Hamburger Icon */}
       {isMobile && (
-        <div
-          onClick={toggleMenu}
-          className="mobile-menu"
-        >
+        <div onClick={toggleMenu} className="mobile-menu" style={{ fontFamily: "Poppins, sans-serif" }}>
           &#9776; {/* Hamburger icon */}
         </div>
       )}
 
       {/* Mobile Dropdown Menu */}
       {isMobile && isMenuOpen && (
-        <div className="dropdown-menu">
+        <div className="dropdown-menu" style={{ fontFamily: "Poppins, sans-serif" }}>
           <a href="/">Home</a>
           <a href="/aboutus">About</a>
           <a href="/portfolio">Portfolio</a>
-          <a href="/contactus"><button>Get in touch</button></a>
+          <a href="/contactus">
+            <button>Get in touch</button>
+          </a>
         </div>
       )}
     </nav>

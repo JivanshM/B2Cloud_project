@@ -10,10 +10,11 @@ const Footer = () => {
       display: "flex",
       flexWrap: "wrap",
       justifyContent: "space-between",
-      borderTop: "1px solid #555", // Adds a border at the top of the footer
+      borderTop: "1px solid #555",
+      fontFamily: "Poppins, sans-serif",
     },
     section: {
-      flex: "1 1 250px", // Ensures flexibility and responsiveness
+      flex: "1 1 250px",
       margin: "10px 20px",
     },
     heading: {
@@ -45,6 +46,7 @@ const Footer = () => {
       borderRadius: "5px",
       border: "1px solid #ccc",
       fontSize: "14px",
+      fontFamily: "Poppins, sans-serif",
     },
     button: {
       padding: "10px 20px",
@@ -54,29 +56,31 @@ const Footer = () => {
       borderRadius: "5px",
       cursor: "pointer",
       fontWeight: "bold",
+      fontFamily: "Poppins, sans-serif",
     },
     bottomBar: {
       marginTop: "20px",
-      borderTop: "1px solid #555", // Keeps the hr line at the top of the bottom section
+      borderTop: "1px solid #555",
       paddingTop: "20px",
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
       flexWrap: "wrap",
-      gap: "20px", // Added space between elements
+      gap: "20px",
       width: "100%",
     },
     socialIcons: {
       display: "flex",
       gap: "15px",
       fontSize: "20px",
-      marginLeft: "auto", // Right-aligns the social icons
+      marginLeft: "auto",
     },
     socialIcon: {
       color: "#fff",
       textDecoration: "none",
-      fontSize: "18px", // Reduced font size to prevent overlap
-    },     
+      fontSize: "18px",
+      fontFamily: "Poppins, sans-serif",
+    },
   };
 
   return (
@@ -128,13 +132,9 @@ const Footer = () => {
       </div>
 
       <div style={styles.bottomBar}>
-        <p style={styles.text}>
-          Copyright by Designed by B2Cloud
-        </p>
+        <p style={styles.text}>Copyright by Designed by B2Cloud</p>
         <p style={styles.text}>+1 12 345 6789</p>
-        <p style={styles.text}>
-          india
-        </p>
+        <p style={styles.text}>India</p>
         <div style={styles.socialIcons}>
           <a href="#" style={styles.socialIcon} aria-label="Facebook">
             Facebook

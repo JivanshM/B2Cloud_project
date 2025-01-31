@@ -54,6 +54,7 @@ const ServiceSection = () => {
         justifyContent: 'flex-start',
         marginBottom: '15vh',
         marginTop: '10vh',
+        fontFamily: 'Poppins, sans-serif', // Added font-family
       }}
     >
       <h3
@@ -119,6 +120,7 @@ const ServiceSection = () => {
               margin: 0;
               padding: 0;
               overflow-x: hidden;
+              font-family: 'Poppins', sans-serif;  /* Global font family */
           }
 
           .services-container {
